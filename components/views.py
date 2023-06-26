@@ -45,6 +45,7 @@ class UserAPIDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = (IsAdminReadOnly,)
+    lookup_field = 'username'
 
 # class UserAPIView(APIView):
 #     def get(self, request):
