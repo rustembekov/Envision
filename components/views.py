@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 
 from .permissions import IsAdminReadOnly
-from .serializer import UserSerializer
+from .serializers import UserSerializer
 
 
 class UserViewSetList(mixins.ListModelMixin,
